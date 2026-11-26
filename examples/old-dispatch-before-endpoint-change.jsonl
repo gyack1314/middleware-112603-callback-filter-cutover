@@ -1,0 +1,11 @@
+{"at":0,"kind":"subscribe","record":{"sub":"s","project":"p","kinds":["create"],"cut_at":1,"target":"old","revision":1}}
+{"at":1,"kind":"event","record":{"project":"p","seq":1,"object":"x","kind":"create","after":[]}}
+{"at":2,"kind":"poll","record":{"sub":"s"}}
+{"at":3,"kind":"receipt","record":{"sub":"s","target":"old","notification":1,"state":"accepted"}}
+{"at":4,"kind":"subscribe","record":{"sub":"s","project":"p","kinds":["release"],"cut_at":2,"target":"new","revision":2}}
+{"at":5,"kind":"event","record":{"project":"p","seq":2,"object":"x","kind":"release","after":[1]}}
+{"at":6,"kind":"restart","record":{}}
+{"at":7,"kind":"poll","record":{"sub":"s"}}
+{"at":8,"kind":"receipt","record":{"sub":"s","target":"old","notification":1,"state":"done"}}
+{"at":9,"kind":"summary","record":{"sub":"s","target":"new","object":"x","through":1}}
+{"at":10,"kind":"poll","record":{"sub":"s"}}
